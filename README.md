@@ -1,4 +1,3 @@
-Certainly! Here’s a sample README.md template for your Ice Wall project. This document will provide an overview, setup instructions, and details about key components and features. You can expand or modify it as necessary based on your specific needs.
 
 Ice Wall
 
