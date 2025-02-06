@@ -1,0 +1,92 @@
+/ice-wall-ui
+│
+├── /src
+│   ├── /components                  # Core UI components
+│   │   ├── /User
+│   │   │   ├── UserProfile.jsx      # Displays user profile and stats
+│   │   │   ├── ItemList.jsx         # List of user-owned items
+│   │   │   ├── ItemDetail.jsx       # Detailed view of an item
+│   │   │   ├── NavitarProfile.jsx   # Displays Navitar stats, power-ups, and cooldowns
+│   │   │   ├── BattleArena.jsx      # Display and interact with Navitar battles
+│   │   │   └── index.js             # Exports for User-related components
+│   │   │
+│   │   ├── /Team
+│   │   │   ├── TeamProfile.jsx      # Displays team information and stats
+│   │   │   ├── TeamMemberList.jsx   # Displays team members and roles
+│   │   │   ├── TeamPerks.jsx        # Displays and manages team perks
+│   │   │   └── index.js             # Exports for Team-related components
+│   │   │
+│   │   ├── /AR
+│   │   │   ├── ARView.jsx           # Integrates AR-based views and interactions
+│   │   │   ├── ARNavitar.jsx        # Interacts with Navitars in AR
+│   │   │   └── index.js             # Exports for AR components
+│   │   │
+│   │   ├── /Blockchain
+│   │   │   ├── WalletConnect.jsx    # Manages wallet connection (MetaMask, etc.)
+│   │   │   ├── TokenBalance.jsx     # Displays user token balance, transaction history
+│   │   │   ├── Staking.jsx          # Allows staking and profit-sharing management
+│   │   │   ├── Voting.jsx           # Displays governance voting and DAO actions
+│   │   │   └── index.js             # Exports for Blockchain-related components
+│   │   │
+│   │   ├── /Shared
+│   │   │   ├── Header.jsx           # Header with navigation
+│   │   │   ├── Footer.jsx           # Footer component
+│   │   │   ├── LoadingSpinner.jsx   # Spinner for async actions
+│   │   │   ├── Notification.jsx     # Component to display notifications
+│   │   │   ├── GeoFenceAlert.jsx    # Alerts when a user is in a geo-fenced area
+│   │   │   └── index.js             # Exports for Shared components
+│   │   │
+│   │   ├── App.jsx                  # Main application layout
+│   │   ├── Routes.jsx               # Defines all routes for the app
+│   │   ├── Navbar.jsx               # Navbar for app-wide navigation
+│   │   └── index.js                 # Entry point for the application
+│   │
+│   ├── /hooks                       # Custom React hooks for managing state and API calls
+│   │   ├── useUser.js               # Hook to fetch and manage user data
+│   │   ├── useTeam.js               # Hook to fetch and manage team data
+│   │   ├── useNavitar.js            # Hook to manage Navitar-related logic
+│   │   ├── useAR.js                 # Hook to manage AR functionality
+│   │   ├── useBlockchain.js         # Hook to manage blockchain data and interactions
+│   │   ├── useNotifications.js      # Hook for real-time notifications
+│   │   └── useGeoLocation.js        # Hook to fetch and manage user's location
+│   │
+│   ├── /services                    # API calls, smart contract interactions, blockchain integration
+│   │   ├── api.js                   # Centralized API functions for backend interaction
+│   │   ├── blockchain.js            # Handles smart contract interactions (e.g., staking, DAO, voting)
+│   │   ├── ar.js                    # Handles AR-specific API interactions
+│   │   └── notifications.js         # Handles push notifications and geo-fencing
+│   │
+│   ├── /context                     # Global state management using Context API
+│   │   ├── UserContext.js           # Context for user data (profile, items, Navitars)
+│   │   ├── TeamContext.js           # Context for team data and perks
+│   │   ├── NavitarContext.js        # Context for Navitar combat and abilities
+│   │   ├── ARContext.js             # Context for AR-based data
+│   │   ├── BlockchainContext.js     # Context for blockchain wallet and token data
+│   │   ├── NotificationContext.js   # Context for notifications and alerts
+│   │   └── GeoLocationContext.js    # Context for user location tracking
+│   │
+│   ├── /styles                      # Styling and theming for the frontend
+│   │   ├── main.css                 # Global styles
+│   │   ├── layout.css               # Layout-specific styles (e.g., grid, containers)
+│   │   └── components.css           # Component-specific styles
+│   │
+│   ├── /tests                       # Unit tests for each component and functionality
+│   │   ├── App.test.js              # Main app tests
+│   │   ├── UserProfile.test.js      # Test for user profile
+│   │   ├── Navitar.test.js          # Test for Navitar interactions
+│   │   ├── Team.test.js             # Test for team-related components
+│   │   ├── Blockchain.test.js       # Test for blockchain interactions
+│   │   ├── AR.test.js               # Test for AR-based components
+│   │   └── Notification.test.js     # Test for notification system
+│   │
+│   ├── package.json                 # Project dependencies and scripts
+│   ├── .env                         # Environment variables (e.g., API URL, blockchain provider)
+│   └── .gitignore                   # Git ignore file
+│
+└── /public                          # Public assets (images, icons, index.html)
+    ├── index.html                   # The main HTML template
+    ├── /assets
+    │   ├── logo.png                 # Ice Wall logo
+    │   ├── navitar.png              # Example Navitar image
+    │   └── icons                    # Icons for UI elements
+    └── favicon.ico                  # Application favicon
